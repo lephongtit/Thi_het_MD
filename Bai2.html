@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function tryRemoFromArray(arr,n) {
+            for (let i=0;i<arr.length;i++) {
+                if (arr[i] === n) {
+                    arr.splice(i, 1)
+                }
+            }
+            return arr;
+        }
+
+        let arr1 =[12,6,3,7,21,5,7];
+        let n1 =21;
+        let ketqua1=tryRemoFromArray (arr1,n1);
+        for (let i=0;i<ketqua1.length;i++){
+            document.write(ketqua1[i]+" ")
+        };
+
+
+    </script>
+</body>
+</html>
